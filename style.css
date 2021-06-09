@@ -1,0 +1,700 @@
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Merienda:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 85%;
+    background: #1a1a1d;
+    font-family: 'Audiowide', sans-serif;
+}
+
+header {
+    font-family: "Cinzel", sans-serif;
+
+    background: radial-gradient(rgb(255, 255, 255), #2d2b28 27%, #070707);
+    border-bottom: 0.2rem solid red;
+
+    margin-bottom: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+    width: 100%;
+    text-align: center;
+
+    background: linear-gradient(#c60000 20%, #171717, #c60000 70%) no-repeat;
+    -webkit-text-stroke: 0.03rem black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+header i {
+    position: relative;
+    right: 3rem;
+    justify-self: flex-end;
+
+    background: linear-gradient(#322b2b, #ff0000, #2f2727) no-repeat;
+    -webkit-text-stroke: 0.01em #b6b6b6;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header i:hover {
+    -webkit-text-stroke: 0.03em #b6b6b6;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10rem;
+}
+
+/*General___________________________________________________*/
+.loader {
+    width: 5rem;
+    height: 8rem;
+    animation: spin 0.01s linear infinite;
+
+    position: relative;
+    top: 11rem;
+
+    border-top: 0.5rem solid #ff0000;
+    border-bottom: 0.4rem solid #ff0000;
+    border-radius: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #1e1e1d;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 0.1rem solid #6c6c6c;
+    border-radius: 1rem;
+
+    box-shadow: inset 0 0 0.7rem rgba(0, 0, 0, .3);
+    background: linear-gradient(to right, #525252, #c1c1c1, #525252);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #1e1e1d;
+}
+
+.header {
+    width: 100%;
+    height: 10rem;
+
+    padding: 0 2rem;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-shadow: 0 0 7.5rem rgb(255, 255, 255);
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+
+.header h1 {
+    font-family: "Cinzel", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.header p {
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
+}
+
+.header .spring {
+    background: linear-gradient(#ff9900, #ffe400, #FF9900FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .summer {
+    background: linear-gradient(#095038, #03fa66, #095038);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .autumn {
+    background: linear-gradient(#ff2600, #ff652f, #ff2600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .winter {
+    background: linear-gradient(#0339fa, #03fafa, #0339fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.list, .calendar {
+    background-color: #1e1e1d;
+    box-shadow: 0 0.5rem 2rem #000000;
+    border: 0.4rem ridge rgb(184, 184, 184);
+}
+
+/*Assignments-----------------------------------------------*/
+.listContainer {
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.list {
+    width: 45rem;
+    height: 52rem;
+}
+
+.list .header {
+    width: 44.2rem;
+    height: 14.4rem;
+
+    padding: 0.2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list .header i {
+    width: 2rem;
+    height: 2rem;
+
+    margin: 1rem 1.125rem 0 0.125rem;
+    align-self: flex-end;
+
+    text-shadow: 0 0 7.5rem rgb(255, 255, 255);
+    background: linear-gradient(#454545, #ffffff, #454545);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.list .header i:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.list .header i:active {
+    background: linear-gradient(#797979, #ffffff, #797979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.list .header h1 {
+    background: linear-gradient(#454545, #ffffff, #454545);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.list .header div {
+    letter-spacing: 0.1rem;
+    font-size: 1.4rem;
+
+    margin-right: 0.4rem;
+    text-align: right;
+    align-self: flex-end;
+
+    background: linear-gradient(#454545 5%, #ffffff, #454545);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.display {
+    display: flex;
+    height: 36.8rem;
+    flex-direction: column;
+}
+
+.inputContainer {
+    width: 100%;
+    height: 3.3rem;
+
+    padding: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+
+    background: linear-gradient(to bottom, #ff0000, #4e0000, #2a0000);
+    border-bottom: 0.1rem solid #000000;
+    border-top: 0.1rem solid #000000;
+
+    z-index: 1;
+}
+
+/*--------*/
+#forInput {
+    position: relative;
+    right: 0.6rem;
+}
+
+label i {
+    position: relative;
+    right: 2rem;
+    opacity: 0.9;
+}
+
+input {
+    width: 22rem;
+    height: 2.3rem;
+
+    padding: 0.3rem;
+    border: 0.2rem ridge rgb(184, 184, 184);
+
+    background: linear-gradient(#525252, #929292, #525252, #525252);
+    text-shadow: 0 0 0.2rem #000000;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+input:focus {
+    background: linear-gradient(#525252, #848484, #525252, #525252);
+}
+
+/*--------*/
+#forFilter {
+    position: relative;
+    left: 2rem;
+}
+
+select {
+    height: 2.3rem;
+    width: 7rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+
+    text-shadow: 0 0 0.2rem #000000;
+    outline: none;
+    padding: 0.1rem;
+    border: 0.2rem ridge rgb(184, 184, 184);
+    background: linear-gradient(#525252, #929292, #525252, #525252);
+}
+
+select:focus {
+    width: 15rem;
+    height: auto;
+}
+
+select:hover,
+input:hover {
+    border-color: #9c9c9c;
+    color: #ffffff;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select optgroup {
+    color: #ff0000;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+
+    text-shadow: 0 0 0.5rem white;
+    background-color: #280000;
+    border-bottom: 0.1rem solid #ffffff;
+    border-radius: 0.4rem 0.4rem 0.5rem 0.5rem;
+}
+
+select option:hover {
+    text-shadow: 0 0 0.2rem #000000;
+    color: #ffe900;
+}
+
+select option {
+    width: 100%;
+    /*overflow*/
+    padding: 0.5rem;
+}
+
+select option:checked {
+    padding: 0.1rem;
+    background: linear-gradient(to bottom, #ff0000, #4e0000, #2a0000);
+    border-radius: 0.4rem;
+}
+
+.inputContainer select::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #ffffff, #b4b4b4, #ffffff);
+}
+.inputContainer select::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+}
+/*--------*/
+.assContainer {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: auto;
+    background: radial-gradient(#28282b 20%, #1a1a1d);
+}
+
+.empty {
+    position: relative;
+    top: calc(33.3rem / 4);
+    font-size: 10rem;
+    transform: rotate(-40deg);
+
+    padding: 0.2rem;
+    background: linear-gradient(#454545, #ffffff, #454545);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 7.5rem rgb(255, 0, 0);
+}
+
+ul {
+    height: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+ul li {
+    height: 4rem;
+    list-style: none;
+    font-size: 1.3rem;
+    text-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+    border-width: 0.2rem;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #890000, red, #890000, #1e1e1d 95%) 1;
+
+    background: linear-gradient(#100f0f 50%, #1c0000);
+    box-shadow: -0.2rem -0.3rem 0.3rem rgba(0, 0, 0, 1);
+
+    margin: 0.3rem 0 0.3rem 0.8rem;
+    padding: 0.3rem;
+}
+
+ul li:hover {
+    background: linear-gradient(#262323 50%, #680000);
+    cursor: pointer;
+}
+
+/*------------*/
+#assigmentDetails {
+    height: 89%;
+    background: radial-gradient(#28282b 20%, #1a1a1d);
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 0 1rem;
+    padding-top: 1rem;
+
+    border-width: 0.1rem;
+    border-style: solid;
+    border-image: linear-gradient(#898989, #ffffff, #898989, rgba(0, 0, 0, 0) 95%) 1;
+}
+
+#assigmentDetails:hover {
+    cursor: text;
+}
+
+#assigmentDetails div {
+    height: 3.5rem;
+    display: flex;
+    padding: 1rem;
+}
+
+#assigmentDetails div div {
+    display: flex;
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+#assigmentDetails div p1 {
+    color: red;
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.4);
+
+    margin-left: auto;
+    padding-left: 1rem;
+
+    overflow-wrap: anywhere;
+    text-align: right;
+}
+
+#assigmentDetails a {
+    font-size: 1.5rem;
+    color: #a621ff;
+    align-self: center;
+    text-decoration: none;
+
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 0.2em;
+    background: linear-gradient(#494949, rgba(62, 62, 62, 0), #3e3e3e);
+
+    border-width: 0.1rem;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #6d0000, #ff0000, #470000) 1;
+}
+
+#assigmentDetails a:hover {
+    text-shadow: 0 0 2rem rgba(255, 255, 255, 0.6);
+}
+
+#assigmentDetails a:active {
+    position: relative;
+    top: 0.1rem;
+
+    color: #00ff00;
+    border-image: linear-gradient(to bottom, #6d0000, #ff0000, #202023 95%) 1;
+}
+
+/*Calendar------------------------------------------------------------*/
+.calendarContainer {
+    height: 100%;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.calendar {
+    width: 45rem;
+    height: 52rem;
+}
+
+.header i {
+    width: 2rem;
+    height: 2rem;
+    text-shadow: 0 0 3rem rgb(255, 255, 255);
+}
+
+.header i:hover {
+    color: #9c9c9c;
+    text-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.weekdays {
+    width: 100%;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.weekdays div {
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 0.1rem 0.2rem 0.2rem rgb(0, 0, 0);
+    letter-spacing: 0.15rem;
+    width: calc(44.6rem / 7);
+
+    border-width: 0.2rem;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), red, rgba(0, 0, 0, 0)) 1 100%;
+    border-right: none;
+    border-radius: 10px;
+}
+
+.weekdays #special {
+    border: none;
+}
+
+/*---------------*/
+.days {
+    font-size: 1.4rem;
+    width: 100%;
+    text-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    padding: 0.2rem;
+    flex-wrap: wrap;
+}
+
+.days .loader{
+    margin: auto;
+}
+
+.days div:not(.assCounter):not(.loader) {
+    width: calc(39.6rem / 7);
+    height: calc(33.2rem / 6);
+    position: relative;
+    text-align: center;
+    text-shadow: 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem;
+
+    box-shadow: -0.2rem -0.3rem 0.3rem rgba(0, 0, 0, 1);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.days div:hover:not(.today):not(.otherToday):not(.assCounter):not(.loader) {
+    background: #323232;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.nextDate:not(.assCounter),
+.prevDate:not(.assCounter){
+    color: rgba(199, 208, 255, 0.7);
+    background: linear-gradient(#000000, #1e1e1d 99%);
+}
+
+div .today:not(.assCounter) {
+    background: linear-gradient(#630000, #1e1e1d 99%) no-repeat;
+}
+
+.today:hover:not(.assCounter),
+.otherToday:hover:not(.assCounter) {
+    background: linear-gradient(#b10000, #1e1e1d 98%);
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.otherToday:not(.assCounter) {
+    border: 1px solid #ffffff;
+    background: linear-gradient(#63008e, #1e1e1d 99%) no-repeat;
+}
+
+.assCounter {
+    width: 1rem;
+    height: 1rem;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+    padding: 0.6rem;
+
+    border-image: none;
+    border-radius: 100%;
+    background: radial-gradient(#006d2a 30%, #26ff00, #070707);
+
+    -webkit-text-stroke: 0.04em #000000;
+    text-shadow: 0 0 0.1rem black;
+}
+
+/*----------------*/
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes return {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 2500px) {
+    html {
+        font-size: 105%;
+    }
+}
+
+@media (max-width: 2000px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 1600px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+@media (max-width: 1440px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 85%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .calendar{
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 49%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 42.5%;
+    }
+}
+
+
+

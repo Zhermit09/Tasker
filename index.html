@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel=icon type="image/png" href="./images/NGNL.png">
+    <title>Tasker</title>
+
+</head>
+<header>
+    <h1>Tasker</h1>
+    <i class="fas fa-sync fa-3x" onclick="update()"></i>
+</header>
+<body>
+<main>
+    <div class="listContainer">
+        <div class="list">
+            <div class="header">
+                <i class="fa fa-trash-alt fa-2x add" onclick="addFilters(); displayAllAssignments()"></i>
+                <h1>Assignments</h1>
+                <div>
+                    <p id="counter"></p>
+                    <p id="date"></p>
+                </div>
+            </div>
+            <div class="display">
+                <div class="inputContainer">
+                    <label for="#Filter" id="forFilter">
+                        <select id="#Filter" onfocus="Size()" onblur="size='1'" onchange="search();">
+                            <optgroup label="Classes"></optgroup>
+                            <option value="Class">Empty</option>
+                        </select>
+                    </label>
+                    <label for="inputField" id="forInput">
+                        <input onkeyup="search()" type="text" id="inputField" placeholder="Search...">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="assContainer">
+                    <div class="loader"></div>
+                    <ul id="assigmentList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calendarContainer">
+        <div class="calendar">
+            <div class="header">
+                <i class="fas fa-angle-left fa-2x prev"></i>
+                <div class="date">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <i class="fas fa-angle-right fa-2x next"> </i>
+            </div>
+            <div class="weekdays">
+                <div id="special">Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+            </div>
+            <div class="days">
+            </div>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/f7f93b2485.js" crossorigin="anonymous"></script>
+</body>
+</html>
