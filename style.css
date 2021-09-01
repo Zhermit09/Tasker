@@ -37,12 +37,12 @@ header h1 {
 
     width: 100%;
     text-align: center;
+    padding-left: 3.5rem;
 
     background: linear-gradient(#c60000 20%, #171717, #c60000 70%) no-repeat;
     -webkit-text-stroke: 0.03rem black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 header i {
