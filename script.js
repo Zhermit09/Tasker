@@ -142,10 +142,11 @@ async function assigmentFetch() {
     assignments = await Promise.all(Batch);
 
     //Check if the course has no data and remove from array
-    assignments.forEach((ass, index = 0) => {
+    let length = assignments.length-1
+    assignments.slice().reverse().forEach((ass, index) => {
         if (Object.keys(ass).length === 0) {
-            assignments.splice(index, 1)
-        }
+           assignments.splice(length-index, 1)
+                  }
     })
 
     localStorage.setItem("assignments", JSON.stringify(assignments));
@@ -178,9 +179,10 @@ async function statusFetch() {
     }
 
     submissions = await Promise.all(batch);
-    submissions.forEach((ass, index = 0) => {
+    let length = submissions.length-1
+    submissions.slice().reverse().forEach((ass, index) => {
         if (Object.keys(ass).length === 0) {
-            submissions.splice(index, 1)
+            submissions.splice(length-index, 1)
         }
     })
     localStorage.setItem("submissions", JSON.stringify(submissions));
