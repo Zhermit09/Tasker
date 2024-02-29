@@ -12,7 +12,7 @@ The reason is that one is using Google services for free because the application
 Because of that, I need to whitelist people to give them access to the application. 
 
 ## Preview
-![Application preview](https://github.com/Zhermit09/Tasker/blob/32fcf26469e7060a2a181969755c36c068225c75/images/Tasker.PNG)
+![Application preview](https://raw.githubusercontent.com/Zhermit09/Tasker/master/images/Tasker.PNG)
 Nevertheless here is a preview of the application, on the left you have all your assignments, you can search for them and apply filters. 
 You can double-click the assignment to show additional information and a link that leads you to the assignment in the Google Classroom.
 On the right is a calendar that shows the current month and highlights the current day per default. 
